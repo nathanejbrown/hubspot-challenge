@@ -23,33 +23,12 @@
     class="data"
   >
     <div class="data-container initial" [ngClass]="initialData ? 'ease-to-display-slow' : 'hide'">
+      <h1>Response from original request</h1>
       {{ initialData }}
     </div>
-    <div class="format-options" [ngClass]="displayFormatOptions ? 'ease-to-display-slow' : 'hide'">
-      <h5>How do you want to manipulate it?</h5>
-      <button
-      (click)="handleClick()"
-      mat-button 
-      class="button-blue"
-    >
-      Format 1
-    </button>
-    <button
-      (click)="handleClick()"
-      mat-button 
-      class="button-blue"
-    >
-      Format 2
-    </button>
-    <button
-      (click)="handleClick()"
-      mat-button 
-      class="button-blue"
-    >
-      Format 3
-    </button>
-    </div>
+
     <div class="data-container formatted" [ngClass]="formattedData ? 'ease-to-display-slow' : 'hide'">
+      <h1>Request sent</h1>
       {{ formattedData }}
     </div>
   </section>
