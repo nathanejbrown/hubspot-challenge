@@ -33,10 +33,6 @@ export class AppComponent {
     })
   }
 
-  handleClick(): void {
-    this.formattedData = 'testing 123';
-  }
-
   findAllCountriesAndDates(list: any) {
     let allCountries = {};
 
